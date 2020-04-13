@@ -152,13 +152,13 @@ textarea {
 }
 .ba-section-intro {
   background: url("../img/points-small.png") no-repeat left top 840px;
-  padding: 355px 160px 200px 155px;
 }
 .ba-section-intro__inner {
   width: 52%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding: 355px 160px 200px 155px;
 }
 .ba-section-intro__inner p {
   font-size: 28px;
@@ -170,6 +170,7 @@ textarea {
 input[type="text"]::-webkit-input-placeholder {
   color: rgba(68, 34, 75, 0.4);
   letter-spacing: 0.0001em;
+  font-weight: 600;
 }
 input[type="text"]:focus::-webkit-input-placeholder {
   color: rgba(68, 34, 75, 1);
