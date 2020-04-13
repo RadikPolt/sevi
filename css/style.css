@@ -154,11 +154,11 @@ textarea {
   background: url("../img/points-small.png") no-repeat left top 840px;
 }
 .ba-section-intro__inner {
-  width: 52%;
+  width: 54%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 355px 160px 200px 155px;
+  padding: 355px 0 200px 155px;
 }
 .ba-section-intro__inner p {
   font-size: 28px;
