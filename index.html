@@ -9,8 +9,6 @@
 
 	<meta name="description" content="" />
 	<link rel="icon" href="favicon.png" />
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="css/style.css" />
 
 </head>
@@ -54,6 +52,9 @@
 						</ul>
 					</div>
 					<!--/. ba-nav -->
+					<button class="ba-menu-toggle" aria-label="Open menu" title="Open menu">
+						<span></span>
+					</button> <!-- /.ba-menu-toggle -->
 				</div>
 				<!-- /.ba-header__inner -->
 			</div>
@@ -70,7 +71,7 @@
 							placeholder="Seacrh books, articles, keywords" autocomplete="off">
 						<label class="ba-form-search__label" for="search_text"></label>
 						<button class="ba-form-search__button" type="submit">
-							<svg   viewBox="0 0 36 36">
+							<svg viewBox="0 0 36 36">
 								<path
 									d="M26.387,23.209 L24.718,23.209 L24.127,22.639 C26.661,19.686 27.971,15.657 27.253,11.374 C26.260,5.509 21.360,0.826 15.447,0.109 C6.514,-0.989 -1.004,6.522 0.094,15.445 C0.812,21.352 5.500,26.247 11.371,27.238 C15.658,27.955 19.692,26.647 22.649,24.116 L23.219,24.707 L23.219,26.373 L32.194,35.339 C33.060,36.204 34.475,36.204 35.341,35.339 C36.207,34.474 36.207,33.060 35.341,32.196 L26.387,23.209 ZM13.715,23.209 C8.457,23.209 4.212,18.969 4.212,13.715 C4.212,8.463 8.457,4.222 13.715,4.222 C18.974,4.222 23.219,8.463 23.219,13.715 C23.219,18.969 18.974,23.209 13.715,23.209 Z" />
 							</svg>
@@ -89,7 +90,7 @@
 					<h2 class="ba-section-resources__title"> <span class="ba-text-yellow">Our</span> resources</h2>
 					<div class="ba-row">
 						<div class="ba-col ba-resources-block">
-							<svg class="ba-resources-block__icon"  viewBox="0 0 108 113">
+							<svg class="ba-resources-block__icon" widht="60" height="60" viewBox="0 0 108 113">
 								<path fill-rule="evenodd" opacity="0.651" fill="rgb(253, 200, 0)"
 									d="M62.547,22.594 C87.253,22.594 107.281,42.622 107.281,67.328 C107.281,92.034 87.253,112.062 62.547,112.062 C37.841,112.062 17.812,92.034 17.812,67.328 C17.812,42.622 37.841,22.594 62.547,22.594 Z" />
 								<path fill-rule="evenodd" opacity="0.8" fill="rgb(68, 34, 75)"
@@ -104,7 +105,7 @@
 						</div>
 						<!-- /.ba-col -->
 						<div class="ba-col ba-resources-block">
-							<svg class="ba-resources-block__icon"  viewBox="0 0 109 113">
+							<svg class="ba-resources-block__icon" widht="60" height="60" viewBox="0 0 109 113">
 								<path fill-rule="evenodd" opacity="0.651" fill="rgb(253, 200, 0)"
 									d="M64.188,23.531 C88.885,23.531 108.906,43.560 108.906,68.266 C108.906,92.972 88.885,113.000 64.188,113.000 C39.490,113.000 19.469,92.972 19.469,68.266 C19.469,43.560 39.490,23.531 64.188,23.531 Z" />
 								<path fill-rule="evenodd" opacity="0.8" fill="rgb(68, 34, 75)"
@@ -119,7 +120,7 @@
 						</div>
 						<!-- /.ba-col -->
 						<div class="ba-col ba-resources-block">
-							<svg class="ba-resources-block__icon"  viewBox="0 0 109 113">
+							<svg class="ba-resources-block__icon" widht="60" height="60" viewBox="0 0 109 113">
 								<path fill-rule="evenodd" opacity="0.651" fill="rgb(253, 200, 0)"
 									d="M63.953,22.594 C88.659,22.594 108.688,42.622 108.688,67.328 C108.688,92.034 88.659,112.062 63.953,112.062 C39.247,112.062 19.219,92.034 19.219,67.328 C19.219,42.622 39.247,22.594 63.953,22.594 Z" />
 								<path fill-rule="evenodd" opacity="0.8" fill="rgb(68, 34, 75)"
@@ -134,7 +135,7 @@
 						</div>
 						<!-- /.ba-col -->
 						<div class="ba-col ba-resources-block">
-							<svg class="ba-resources-block__icon"  viewBox="0 0 105 113">
+							<svg class="ba-resources-block__icon" widht="60" height="60" viewBox="0 0 105 113">
 								<path fill-rule="evenodd" opacity="0.651" fill="rgb(253, 200, 0)"
 									d="M60.266,22.594 C84.972,22.594 105.000,42.622 105.000,67.328 C105.000,92.034 84.972,112.062 60.266,112.062 C35.560,112.062 15.531,92.034 15.531,67.328 C15.531,42.622 35.560,22.594 60.266,22.594 Z" />
 								<path fill-rule="evenodd" opacity="0.8" fill="rgb(68, 34, 75)"
@@ -160,16 +161,184 @@
 			<div class="ba-container">
 				<div class="ba-section-libraries__inner">
 					<h2 class="ba-section-libraries__title"> <span class="ba-text-yellow">Our</span> libraries</h2>
-					<p class="ba-section-libraries__text">Your reading list is a good place to start, but you will be
+					<p>Your reading list is a good place to start, but you will be
 						expected to read more widely too. Use Sevi to search for information on your topic, and to find books,
 						journal
 						articles and other materials in the Library.</p>
-						<a class="ba-section-libraries__link" href="#" > Learn More</a>
+					<a class="ba-section-libraries__link" href="#"> Learn More</a>
 				</div>
 			</div>
 		</div>
 		<!-- /.ba-section-libraries -->
+		<div class="ba-section-bestceller">
+			<div class="ba-container">
+				<div class="ba-section-bestceller__iner">
+					<h2 class="ba-section-bestceller__title"><span class="ba-text-yellow">Best</span> seller books</h2>
+					<ol class="ba-section-bestceller__list">
+						<li class="ba-section-bestceller__item ba-books">
+							<div class="ba-books__info">
+								<h3 class="ba-books__title"> A Tale of Two Cities</h3>
+								<p>Charles Dickens</p>
+							</div>
+							<div class="ba-books__rating">
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star-half" />
+								</svg>
+							</div>
+							<span class="ba-books__price">
+								$18.00
+							</span>
+						</li>
+						<li class="ba-section-bestceller__item ba-books">
+							<div class="ba-books__info">
+								<h3 class="ba-books__title"> A Tale of Two Cities</h3>
+								<p>Charles Dickens</p>
+							</div>
+							<div class="ba-books__rating">
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star-half" />
+								</svg>
+							</div>
+							<span class="ba-books__price">
+								$18.00
+							</span>
+						</li>
+						<li class="ba-section-bestceller__item ba-books">
+							<div class="ba-books__info">
+								<h3 class="ba-books__title"> A Tale of Two Cities</h3>
+								<p>Charles Dickens</p>
+							</div>
+							<div class="ba-books__rating">
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star-half" />
+								</svg>
+							</div>
+							<span class="ba-books__price">
+								$18.00
+							</span>
+						</li>
+						<li class="ba-section-bestceller__item ba-books">
+							<div class="ba-books__info">
+								<h3 class="ba-books__title"> A Tale of Two Cities</h3>
+								<p>Charles Dickens</p>
+							</div>
+							<div class="ba-books__rating">
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star-half" />
+								</svg>
+							</div>
+							<span class="ba-books__price">
+								$18.00
+							</span>
+						</li>
+						<li class="ba-section-bestceller__item ba-books">
+							<div class="ba-books__info">
+								<h3 class="ba-books__title"> A Tale of Two Cities</h3>
+								<p>Charles Dickens</p>
+							</div>
+							<div class="ba-books__rating">
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star" />
+								</svg>
+								<svg width="36.55px" height="35.55px">
+									<use xlink:href="#icon-star-half" />
+								</svg>
+							</div>
+							<span class="ba-books__price">
+								$18.00
+							</span>
+						</li>
+
+					</ol>
+				</div>
+				<!-- /.ba-section-bestceller__iner -->
+			</div>
+			<!-- /.ba-container -->
+		</div>
+		<!-- /.ba-section-bestceller -->
 	</main>
+	<svg>
+		<defs>
+			<symbol id="icon-star-hollow" width="36.55px" height="35.55px" viewBox="0 0 36.55 35.55">
+				<path fill-rule="evenodd" stroke="rgb(253, 200, 0)" stroke-width="1.7px" stroke-linecap="butt"
+					stroke-linejoin="miter" fill="none"
+					d="M17.850,27.372 L28.356,33.850 L25.568,21.640 L34.850,13.425 L22.627,12.365 L17.850,0.850 L13.073,12.365 L0.850,13.425 L10.132,21.640 L7.344,33.850 L17.850,27.372 Z" />
+			</symbol>
+			<symbol id="icon-star" width="36.55px" height="35.55px" viewBox="0 0 34 33">
+				<path fill-rule="evenodd" fill="rgb(253, 200, 0)"
+					d="M17.000,26.522 L27.506,33.000 L24.718,20.790 L34.000,12.575 L21.777,11.515 L17.000,0.000 L12.223,11.515 L-0.000,12.575 L9.282,20.790 L6.494,33.000 L17.000,26.522 Z" />
+			</symbol>
+			<symbol id="icon-star-half" width="36.55px" height="35.55px" viewBox="0 0 36.55 35.55">
+				<path fill-rule="evenodd" stroke="rgb(253, 200, 0)" stroke-width="1.7px" stroke-linecap="butt"
+					stroke-linejoin="miter" fill="rgb(255, 255, 255)"
+					d="M17.850,27.372 L28.356,33.850 L25.568,21.640 L34.850,13.425 L22.627,12.365 L17.850,0.850 L13.073,12.365 L0.850,13.425 L10.132,21.640 L7.344,33.850 L17.850,27.372 Z" />
+			</symbol>
+
+		</defs>
+	</svg>
+
+	<script>
+		let menuBtn = document.querySelector('.ba-menu-toggle');
+		let menu = document.querySelector('.ba-nav');
+		menuBtn.addEventListener('click', () => menu.classList.toggle('open'));
+	</script>
 
 </body>
 
