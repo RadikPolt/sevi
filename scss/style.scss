@@ -53,7 +53,7 @@ h2 {
 }
 h3 {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   color: #44224b;
   @media screen and (min-width: 640px) {
     font-size: 26px;
@@ -139,7 +139,6 @@ select:focus {
   border-color: #44224b;
   box-shadow: 0px 0px 20px 0px rgba(190, 162, 190, 0.897);
 }
-
 
 textarea {
 }
@@ -451,7 +450,7 @@ input[type="search"]:focus::-webkit-input-placeholder {
     }
   }
   &__title {
-    margin-bottom: 22px;
+    margin-bottom: 60px;
     @media screen and (min-width: 1024px) {
       margin-bottom: 80px;
     }
@@ -548,7 +547,8 @@ input[type="search"]:focus::-webkit-input-placeholder {
     @media screen and (min-width: 1024px) {
       width: 50%;
       margin-left: 50%;
-      padding: 60px 0 60px 40px;
+      padding: 0 0 30px 40px;
+      margin-bottom: 100px;
     }
     @media screen and (min-width: 1400px) {
       padding: 175px 110px 235px 150px;
@@ -575,16 +575,13 @@ input[type="search"]:focus::-webkit-input-placeholder {
 
   &__title {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     text-align: center;
     @media screen and (min-width: 640px) {
       margin-bottom: 30px;
       text-align: left;
     }
     @media screen and (min-width: 1024px) {
-      margin-bottom: 40px;
-    }
-    @media screen and (min-width: 1400px) {
       margin-bottom: 54px;
     }
   }
@@ -620,17 +617,233 @@ input[type="search"]:focus::-webkit-input-placeholder {
 
 // .ba-section-bestceller start
 
-.ba-section-bestceller{
-	&__inner{
-		padding: 40px 0;
+.ba-container--small {
+  max-width: 1212px;
+}
 
-	}
-	&__list{
-		padding: 0;
+.ba-section-bestceller {
+  &__inner {
+    padding: 40px 0;
+    margin-bottom: 60px;
+    @media screen and (min-width: 640px) {
+      margin-bottom: 80px;
+    }
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 100px;
+    }
+  }
+  &__list {
+    padding: 0;
+    counter-reset: list1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 5px;
+    @media screen and (min-width: 1024px) {
+      align-items: stretch;
+    }
+    & li {
+      position: relative;
+      margin-left: 20px;
+      @media screen and (min-width: 640px) {
+        margin-left: 25px;
+      }
+      @media screen and (min-width: 1024px) {
+        margin-left: 35px;
+      }
+      &::before {
+        counter-increment: list1;
+        content: counter(list1) ". ";
+        position: absolute;
+        top: 0;
+        left: -20px;
+        font: 700 18px/1.2 "Nunito Sans", sans-serif;
+        color: #44224b;
+        @media screen and (min-width: 640px) {
+          font-size: 26px;
+          left: -25px;
+        }
+        @media screen and (min-width: 1024px) {
+          font-size: 32px;
+          left: -30px;
+        }
+      }
+    }
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: 640px) {
+      margin-bottom: 80px;
+    }
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 140px;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    height: 32px;
+    line-height: 32px;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0 12px;
+    border-radius: 16px;
+    background: #723182;
+    display: inline-block;
+    text-align: center;
+    @media screen and (min-width: 640px) {
+      height: 42px;
+      line-height: 42px;
+      padding: 0 21px;
+      border-radius: 21px;
+    }
+    @media screen and (min-width: 1024px) {
+      height: 64px;
+      line-height: 64px;
+      padding: 0 63px;
+      border-radius: 32px;
+      letter-spacing: -0.065em;
+    }
+    &:hover {
+      color: #723182;
+      background: transparent;
+      box-shadow: 0 0 0 1px #723182;
+    }
+  }
+}
+.ba-books {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 640px) {
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: start;
+    margin-bottom: 90px;
+  }
+  &__info {
+    & p {
+      margin: 0 0 12px;
+    }
+  }
+  &__title {
+    margin-bottom: 12px;
+    @media screen and (min-width: 1024px) {
+      max-width: 338px;
+    }
+  }
+  &__rating {
+    margin-bottom: 12px;
+  }
+  &__star {
+    width: 28px;
+    height: 28px;
+    @media screen and (min-width: 1024px) {
+      width: 36.55px;
+      height: 35.55px;
+    }
+  }
+  &__price {
+    font: 800 20px/1.2 "Nunito Sans", sans-serif;
+    color: #44224b;
+    display: block;
+    text-align: center;
+    @media screen and (min-width: 640px) {
+      font-size: 29px;
+    }
+    @media screen and (min-width: 640px) {
+      font-size: 36px;
+    }
+  }
+}
+// .ba-section-bestceller end
+
+// .ba-section-create start
+
+.ba-section-create {
+  background: url("../img/bg-create.png") top right no-repeat;
+  background-size: 100%;
+  @media screen and (min-width: 640px) {
+    background-size: 55%;
+  }
+  @media screen and (min-width:1024px){
+	background-size: 50%;
+  }
+
+  &__inner {
+    padding: 110vw 0 40px;
+    @media screen and (min-width: 640px) {
+      width: 50%;
+      margin-right: 50%;
+      padding: 0 30px;
+    }
+    @media screen and (min-width: 1024px) {
+      padding: 0 40px 30px 0;
+      margin-bottom: 100px;
+    }
+    @media screen and (min-width: 1400px) {
+      padding: 220px 170px 280px 120px;
+    }
+    & p {
+      margin: 0 0 30px;
+      line-height: 1.2;
+      @media screen and (min-width: 640px) {
+        margin-bottom: 30px;
+        line-height: 1.5;
+      }
+      @media screen and (min-width: 1024px) {
+        margin-bottom: 40px;
+        line-height: 1.5;
+      }
+      @media screen and (min-width: 1400px) {
+        padding-left: 5px;
+        line-height: 1.9;
+        letter-spacing: -0.032em;
+        margin-bottom: 79px;
+      }
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 640px) {
+      margin-bottom: 30px;
+      text-align: left;
+    }
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 54px;
+    }
+  }
+}
+.ba-section-create__buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@media screen and (min-width:1400px){
+		flex-direction: row;
+		justify-content: space-between;
 	}
 }
-.ba-books { list-style-type: none; }
-.ba-section-bestceller__list { counter-reset: list1; } 
-.ba-section-bestceller__list li:before {
-    counter-increment: list1; 
-    content: counter(list1) ". ";}
+.ba-section-create__link{
+	& + &{
+		margin-top: 40px;
+		@media screen and (min-width:640px){
+			margin-top: 20px;
+		}
+		@media screen and (min-width:1400px){
+			margin: 0;
+		}
+	}
+}
